@@ -1,6 +1,6 @@
 {
   "name": "@liangjiehappy/dsh-plugin-workbench",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "DSH 插件开发测试工作台：写插件时装上就能用。生成脚手架、七层检查、沙箱四阶段测试。装不上的原因（inject 写错、output schema 不合法）会直接告诉你在哪一层。",
   "type": "module",
   "main": "lib/index.js",
