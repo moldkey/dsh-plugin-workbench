@@ -1,0 +1,35 @@
+{
+  "name": "@liangjiehappy/dsh-plugin-workbench",
+  "version": "0.2.3",
+  "description": "DSH 插件开发测试工作台：写插件时装上就能用。生成脚手架、七层检查、沙箱四阶段测试。装不上的原因（inject 写错、output schema 不合法）会直接告诉你在哪一层。",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dshio",
+    "plugin-workbench",
+    "scaffold",
+    "sandbox-test"
+  ],
+  "license": "MIT",
+  "homepage": "https://deepseekbase.com/",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moldkey/dsh-plugin-workbench.git"
+  }
+}

@@ -1,0 +1,14 @@
+# DSH 插件开发测试工作台
+#
+# 工具（5 個）：
+#   plugin_new      生成脚手架
+#   plugin_check    四层静态检查
+#   plugin_test     提交沙箱四阶段测试
+#   plugin_result   查测试结果
+#   plugin_explain  解释失败原因
+#
+# 技能（1 個）：
+#   plugin-dev-guide 插件开发指南
+- insert:
+    - id: dsh-plugin-workbench
+      name: "@liangjiehappy/dsh-plugin-workbench"
