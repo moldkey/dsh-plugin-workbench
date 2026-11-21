@@ -1,13 +1,13 @@
 {
   "name": "@liangjiehappy/dsh-plugin-workbench",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "DSH 插件开发测试工作台：写插件时装上就能用。生成脚手架、七层检查、沙箱四阶段测试。装不上的原因（inject 写错、output schema 不合法）会直接告诉你在哪一层。",
   "type": "module",
   "main": "lib/index.js",
   "files": [
-    "lib",
+    "README.md",
     "cordis.patch.yml",
-    "README.md"
+    "lib"
   ],
   "keywords": [
     "dsh",
@@ -23,6 +23,14 @@
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar-right",
+        "@deepseek-ai/dsh-client-ui-primitives"
+      ],
+      "immediately": true
     }
   },
   "engines": {
@@ -31,5 +39,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/moldkey/dsh-plugin-workbench.git"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js"
   }
 }
